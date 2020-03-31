@@ -5,6 +5,7 @@ module.exports = {
     author: `Ezzatulla`,
   },
   plugins: [
+    " gatsby-transformer-sharp",
     // Styled Components
     `gatsby-plugin-styled-components`,
     // Tailwind Css
