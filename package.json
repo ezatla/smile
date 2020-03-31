@@ -4,7 +4,7 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "10.16.3",
   "engines": {
-    "node": "10.16.x",
+    "node": "10.19.x",
     "npm": "6.11.x"
   },
   "dependencies": {
