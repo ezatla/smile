@@ -5,10 +5,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        smileBlue: "#3B44FE",
+        smileBlue: "#2962ff",
+        smileDarkBlue: "#304ffe",
+      },
+      textColor: {
+        smileBlueBtn: "#2962ff",
+      },
+      borderColor: {
+        smileBlueBr: "#2962ff",
       },
     },
   },
-  variants: {},
+  variants: {
+    boxSizing: ["responsive", "hover", "focus"],
+  },
   plugins: [],
 }

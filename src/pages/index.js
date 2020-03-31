@@ -9,7 +9,7 @@ import SmileConclude from "../components/smileConclude"
 
 const IndexPage = () => {
   return (
-    <div className="container overflow-hidden">
+    <div className="overflow-hidden">
       <Layout>
         <Hero></Hero>
         <SmileCard></SmileCard>

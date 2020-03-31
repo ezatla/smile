@@ -41,9 +41,9 @@ const SmileCard = () => {
     }
   `)
   return (
-    <div className="container">
+    <div className="container mt-24">
       {/* Card Title */}
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center mb-8">
         <div className="w-7/12 text-center">
           <h1>{data.allContentfulSmileCardTitle.edges[0].node.title}</h1>
         </div>
@@ -53,20 +53,20 @@ const SmileCard = () => {
       <div className="flex flex-wrap -mx-2">
         {data.allContentfulSmileCard.edges.map(edge => {
           return (
-            <div className="w-full md:w-1/3 px-2 ">
+            <div className="w-full md:w-1/3 px-2" key={edge.node.title}>
               <div className=" shadow-lg hover:shadow-2xl p-10 h-full transition duration-300 ease-in-out">
                 <img src={edge.node.image.file.url} alt={edge.node.title} />
                 <h3>{edge.node.title}</h3>
-                <p className="text-base font-normal text-gray-700">
+                <div className="text-base font-normal text-gray-700">
                   {edge.node.info}
-                </p>
+                </div>
               </div>
             </div>
           )
         })}
       </div>
       {/* Client */}
-      <div className="flex justify-center mt-20 ">
+      <div className="flex justify-center mt-40 ">
         <div className="w-10/12">
           <div className="text-center">
             <h2>{data.allContentfulSmileCardTitle.edges[1].node.title}</h2>
